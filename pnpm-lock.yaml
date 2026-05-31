@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   next:
-    specifier: canary
-    version: 16.3.0-canary.36(@babel/core@7.29.0)(react-dom@19.2.6)(react@19.2.6)
+    specifier: file:./next-16.3.0-canary.36.tgz
+    version: file:next-16.3.0-canary.36.tgz(@babel/core@7.29.0)(react-dom@19.2.6)(react@19.2.6)
   react:
     specifier: 19.2.6
     version: 19.2.6
@@ -597,78 +597,6 @@ packages:
     dependencies:
       fast-glob: 3.3.1
     dev: true
-
-  /@next/swc-darwin-arm64@16.3.0-canary.36:
-    resolution: {integrity: sha512-jcUwgZG5e+xNKI2DLllTbSnzrNy1WYsztE+dzHzfIf8NJkuWAtxt4aW7KB4HpT0dvTcrx7jy3UtRxFd0Unsy9Q==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-darwin-x64@16.3.0-canary.36:
-    resolution: {integrity: sha512-U9/6XFul0HVoSJzR8dyu9wMpf6nmJ7diA/7xIBraB3UodAHvPIuyim+KGALvcFzH30/OMp1IbI5mqNu/Km4g6Q==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [darwin]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-linux-arm64-gnu@16.3.0-canary.36:
-    resolution: {integrity: sha512-fTX1NbbP+dhqsDzx5LLHG4ESj26PrKpIe7fietpFcgjEAKN48RC1G0feBs/uvWpUiGV6kn9eiZIZ1uSaHQ/siA==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-linux-arm64-musl@16.3.0-canary.36:
-    resolution: {integrity: sha512-mkDmWxNJjg0zJACffvSu+hLf0gOKV7Cv6jpHCVjf0BdZXljmc2Jtnry6pNBB34dh6B0+E/tDjO/jKzOXMqU9Bg==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-linux-x64-gnu@16.3.0-canary.36:
-    resolution: {integrity: sha512-zlw8ptIgmubt8bhLgqsdFRsHS+0beEwGCeHzFf+L5z4I+q0HdjB5tPIu0vsDtSPpQx4x0Ei6yMAntJ5ebM05HQ==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-linux-x64-musl@16.3.0-canary.36:
-    resolution: {integrity: sha512-AeyU4n0Rkepmn7//+FyK6ViCcPFDfXJwDI6eLtg0Af+2QhRQHv+27sKIwqUmCJfHr0QGq/+jsvQxvXQuLAyvCw==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-win32-arm64-msvc@16.3.0-canary.36:
-    resolution: {integrity: sha512-xJ7OLgMNDWCYQn1+76ewX7ycdHduDbV9GTgAYyurkXu+uPaUU/XW0mkKX9nbgmlzUK+Rn9HAza2oQY6w+vgR3g==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [win32]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-win32-x64-msvc@16.3.0-canary.36:
-    resolution: {integrity: sha512-O852mR72rl94dRUmzwT3+NDFbJEweLnwIh00VwJBZx/K+T7GjwsQHDr+rTZCs53w9EhB9HVKAfpUYzWhtZkmVA==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [win32]
-    requiresBuild: true
-    dev: false
-    optional: true
 
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2812,50 +2740,6 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /next@16.3.0-canary.36(@babel/core@7.29.0)(react-dom@19.2.6)(react@19.2.6):
-    resolution: {integrity: sha512-0/2B93GLozKLwQceJvwoZsG1HOSSbLwXMM5lZd31QTm6pyUAR4jvn2bqN+oJ6ZEp4ht/qU4Inj6fX+vR430J+A==}
-    engines: {node: '>=20.9.0'}
-    hasBin: true
-    peerDependencies:
-      '@opentelemetry/api': ^1.1.0
-      '@playwright/test': ^1.51.1
-      babel-plugin-react-compiler: '*'
-      react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
-      react-dom: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
-      sass: ^1.3.0
-    peerDependenciesMeta:
-      '@opentelemetry/api':
-        optional: true
-      '@playwright/test':
-        optional: true
-      babel-plugin-react-compiler:
-        optional: true
-      sass:
-        optional: true
-    dependencies:
-      '@next/env': 16.3.0-canary.36
-      '@swc/helpers': 0.5.15
-      baseline-browser-mapping: 2.10.32
-      caniuse-lite: 1.0.30001793
-      postcss: 8.5.10
-      react: 19.2.6
-      react-dom: 19.2.6(react@19.2.6)
-      styled-jsx: 5.1.6(@babel/core@7.29.0)(react@19.2.6)
-    optionalDependencies:
-      '@next/swc-darwin-arm64': 16.3.0-canary.36
-      '@next/swc-darwin-x64': 16.3.0-canary.36
-      '@next/swc-linux-arm64-gnu': 16.3.0-canary.36
-      '@next/swc-linux-arm64-musl': 16.3.0-canary.36
-      '@next/swc-linux-x64-gnu': 16.3.0-canary.36
-      '@next/swc-linux-x64-musl': 16.3.0-canary.36
-      '@next/swc-win32-arm64-msvc': 16.3.0-canary.36
-      '@next/swc-win32-x64-msvc': 16.3.0-canary.36
-      sharp: 0.34.5
-    transitivePeerDependencies:
-      - '@babel/core'
-      - babel-plugin-macros
-    dev: false
-
   /node-exports-info@1.6.0:
     resolution: {integrity: sha512-pyFS63ptit/P5WqUkt+UUfe+4oevH+bFeIiPPdfb0pFeYEu/1ELnJu5l+5EcTKYL5M7zaAa7S8ddywgXypqKCw==}
     engines: {node: '>= 0.4'}
@@ -3694,3 +3578,42 @@ packages:
   /zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
     dev: true
+
+  file:next-16.3.0-canary.36.tgz(@babel/core@7.29.0)(react-dom@19.2.6)(react@19.2.6):
+    resolution: {integrity: sha512-K65oqBpYRsYNZ3ZpcMfhjB+LsCAX0rUi53Lfy7b5EwwOx2QSmgcq/sSTIZfwj1TxubcN0ria33BUKUnW6VGl2g==, tarball: file:next-16.3.0-canary.36.tgz}
+    id: file:next-16.3.0-canary.36.tgz
+    name: next
+    version: 16.3.0-canary.36
+    engines: {node: '>=20.9.0'}
+    hasBin: true
+    peerDependencies:
+      '@opentelemetry/api': ^1.1.0
+      '@playwright/test': ^1.51.1
+      babel-plugin-react-compiler: '*'
+      react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
+      react-dom: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
+      sass: ^1.3.0
+    peerDependenciesMeta:
+      '@opentelemetry/api':
+        optional: true
+      '@playwright/test':
+        optional: true
+      babel-plugin-react-compiler:
+        optional: true
+      sass:
+        optional: true
+    dependencies:
+      '@next/env': 16.3.0-canary.36
+      '@swc/helpers': 0.5.15
+      baseline-browser-mapping: 2.10.32
+      caniuse-lite: 1.0.30001793
+      postcss: 8.5.10
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
+      styled-jsx: 5.1.6(@babel/core@7.29.0)(react@19.2.6)
+    optionalDependencies:
+      sharp: 0.34.5
+    transitivePeerDependencies:
+      - '@babel/core'
+      - babel-plugin-macros
+    dev: false

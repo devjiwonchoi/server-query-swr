@@ -7,7 +7,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "canary",
+    "next": "file:./next-16.3.0-canary.36.tgz",
     "react": "19.2.6",
     "react-dom": "19.2.6",
     "swr": "2.4.1"
